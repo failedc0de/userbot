@@ -1,0 +1,12 @@
+aiohttp
+asyncio
+dnspython
+gitpython
+heroku3
+psutil
+pyrogram
+python-dotenv
+requests
+tgcrypto
+urllib3
+uvloop
