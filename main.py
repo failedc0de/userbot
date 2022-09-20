@@ -2,6 +2,8 @@ import os
 from pyrogram import Client, filters, enums
 from pyrogram.types import Message
 import asyncio
+from threading import Event
+
 import logging
 import sys
 import time
@@ -23,15 +25,28 @@ app = Client(name="bot5",
              api_hash=API_HASH,
              session_string=STRING_SESSION,
             )
-            
+SPAM_COUNT = [0]
+def increment_spam_count():
+    SPAM_COUNT[0] += 1
+    return spam_allowed()
+
+
+def spam_allowed():
+    return SPAM_COUNT[0] < 50
+
 async def main():
   await app.start()
   gua = await app.get_me()
-  await app.send_message(BOTT, "/next")
-  await asyncio.sleep(6)
-  await app.send_message(BOTT, f"**halo aku {gua.mention} mau ngasih tau kalau kamu sekarang bisa cari pacar di** @pintarbot\n\n**LINK:** @pintarbot\n\n**Kalau gabisa di klik salin** `@pintarbot` **taro di menu search**")
-  await asyncio.sleep(6)
-  await app.send_message(BOTT, "/next")
+  delay = 6
+  count = 10
+  delaySpamEvent = Event()
+  for i in range(0, count):'
+    if i != 0:
+      delaySpamEvent.wait(delay)
+      await client.send_message(BOTT, "HAI ANJ")
+      limit = increment_spam_count()
+      if not limit:
+        break
   
 if __name__ == "__main__":
     LOOP.run_until_complete(main())
