@@ -1,1 +1,1 @@
-worker: python3 spambot.py
+worker: python3 main.py
