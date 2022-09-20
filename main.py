@@ -43,7 +43,7 @@ async def main():
   for i in range(0, count):'
     if i != 0:
       delaySpamEvent.wait(delay)
-      await client.send_message(BOTT, "HAI ANJ")
+      await app.send_message(BOTT, "HAI ANJ")
       limit = increment_spam_count()
       if not limit:
         break
