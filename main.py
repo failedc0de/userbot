@@ -45,8 +45,6 @@ async def main():
     delaySpamEvent.wait(delay)
     await app.send_message(BOTT, "HAI ANJ")
     limit = increment_spam_count()
-    if not limit:
-      break
   
 if __name__ == "__main__":
     LOOP.run_until_complete(main())
