@@ -26,6 +26,7 @@ app = Client(name="bot5",
              session_string=STRING_SESSION,
             )
 SPAM_COUNT = [0]
+
 def increment_spam_count():
     SPAM_COUNT[0] += 1
     return spam_allowed()
@@ -40,13 +41,12 @@ async def main():
   delay = 6
   count = 10
   delaySpamEvent = Event()
-  for i in range(0, count):'
-    if i != 0:
-      delaySpamEvent.wait(delay)
-      await app.send_message(BOTT, "HAI ANJ")
-      limit = increment_spam_count()
-      if not limit:
-        break
+  if count != 0:
+    delaySpamEvent.wait(delay)
+    await app.send_message(BOTT, "HAI ANJ")
+    limit = increment_spam_count()
+    if not limit:
+      break
   
 if __name__ == "__main__":
     LOOP.run_until_complete(main())
