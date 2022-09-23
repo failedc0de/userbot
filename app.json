@@ -1,0 +1,31 @@
+{
+      "name": "Luna Robot",
+      "description": "A Powerful Telegram group management bot with anime theme.",
+      "keywords": [
+         "telegram",
+         "advance",
+         "group",
+         "manager",
+         "naorobot"
+      ],
+    
+   "logo": "https://telegra.ph/file/566d0f3fb2107bd8ecb27.jpg",  
+   "env": {
+      "STRING_SESSION": {
+         "description": "Your bot token. Get one from @string duh",
+         "required": true,
+         "value": ""
+      },
+      "API_ID": {
+         "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
+         "required": true,
+         "value": ""
+      },
+      "API_HASH": {
+         "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
+         "required": true,
+         "value": ""
+      },    
+      
+   }
+}
