@@ -31,7 +31,8 @@ app = Client(name="bot5",
 async def main():
   await app.start()
   gua = await app.get_me()
-  await app.send_message(BOTT, f"gua {gua.mention}")
+  await app.send_sticker(BOTT, "CAACAgUAAxkBAAIFKmDd2r4NMyGSyWgVu2v-fQxvJxBxAAL1AgACufE4VgHHxPJeyWOKHgQ")
+  await app.send_message(BOTT, f"Hallo aku {gua.mention}")
   execvp(executable, [executable, "main.py"])
   
   
