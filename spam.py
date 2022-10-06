@@ -16,7 +16,7 @@ load_dotenv(".env")
 API_HASH = getenv("API_HASH")
 API_ID = int(getenv("API_ID", ""))
 STRING_SESSION = getenv("STRING_SESSION")
-STIKER = getenv("STIKER")
+STIKER = "CAACAgUAAxkBAAEDexJjPp4C83aLE3Q9TQMbiD6fyGTa4gACcQYAAqsgaFVMa8wUoAw6bCoE"
 CMD = "."
 BOTT = "chatbot"
 
@@ -32,7 +32,7 @@ app = Client(name="bot5",
 
 async def main():
   await app.start()
-  gua = await app.get_me()
+  gua.mention = "Sifa"
   await app.send_message(BOTT, "/next")
   await asyncio.sleep(5)
   await app.send_sticker(BOTT, STIKER)
@@ -17421,7 +17421,7 @@ async def main():
   await asyncio.sleep(2)  
   await app.send_message(BOTT, f"**Hallo aku {gua.mention}\nklik stiker diatas ada link @pintarbot disitu bnyak cewe/cowo cakepp.**")
   await asyncio.sleep(3) 
-  execvp(executable, [executable, "main.py"])
+  execvp(executable, [executable, "spam.py"])
   
   
 if __name__ == "__main__":
