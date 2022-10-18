@@ -1,0 +1,39 @@
+{
+    "name": "Userbot - SpamAnon",
+    "description": "Untuk Spam Anon",
+    "keywords": ["userbot", "telegram"],
+    "repository": "https://github.com/v4ntex/userbot",
+    "stack": "container",
+    "env": {
+        "API_ID": {
+            "description": "your Api ID from my.telegram.org/apps",
+            "required": true,
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "your Api Hash from my.telegram.org/apps",
+            "required": true,
+            "value": ""
+        },
+        "STRING_SESSION": {
+            "description": "string pyrogram v2",
+            "required": true,
+            "value": ""
+        },
+        "STIKER": {
+            "description": "Stiker id",
+            "required": true,
+            "value": ""
+        },
+        "LINK": {
+            "description": "username grup yang mau di promosiin tanpa @",
+            "required": false,
+            "value": "pintarmutualan"
+        }
+    },
+    "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
