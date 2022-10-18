@@ -2,7 +2,7 @@
     "name": "Userbot - SpamAnon",
     "description": "Untuk Spam Anon",
     "keywords": ["userbot", "telegram"],
-    "repository": "https://github.com/v4ntex/userbot",
+    "repository": "https://github.com/failedc0de/userbot",
     "stack": "container",
     "env": {
         "API_ID": {
