@@ -23,7 +23,7 @@
         "STIKER": {
             "description": "Stiker id",
             "required": true,
-            "value": ""
+            "value": "CAACAgUAAxkBAAEDrzBjUo9j31j-w3ufERk9urif_pUjPgACFgkAAlmwmFYy2cZceSTp4CoE"
         },
         "LINK": {
             "description": "username grup yang mau di promosiin tanpa @",
