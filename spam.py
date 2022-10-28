@@ -7375,6 +7375,8 @@ async def main():
   await app.send_sticker(BOTT, STIKER)
   await asyncio.sleep(2)  
   await app.send_message(BOTT, f"**Hallo aku Agnes\nklik stiker diatas ada link @{LINK} disitu bnyak cewe/cowo cakepp.**")
+  await asyncio.sleep(2)
+  await app.send_message(BOTT, "/stop")
   await asyncio.sleep(86400)
   execvp(executable, [executable, "start.py"])
   
