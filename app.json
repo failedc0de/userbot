@@ -27,8 +27,18 @@
         },
         "LINK": {
             "description": "username grup yang mau di promosiin tanpa @",
-            "required": false,
+            "required": true,
             "value": "pintarmutualan"
+        },
+        "slop": {
+            "description": "detik next",
+            "required": true,
+            "value": "15"
+        },
+        "BOTT": {
+            "description": "username bot yang mau di promosiin tanpa @",
+            "required": true,
+            "value": "chatbot"
         }
     },
     "buildpacks": [
