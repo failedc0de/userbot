@@ -8,12 +8,12 @@
         "API_ID": {
             "description": "your Api ID from my.telegram.org/apps",
             "required": true,
-            "value": ""
+            "value": "19685518"
         },
         "API_HASH": {
             "description": "your Api Hash from my.telegram.org/apps",
             "required": true,
-            "value": ""
+            "value": "33bf1d586e5fdfd9e66aaa52a576935a"
         },
         "STRING_SESSION": {
             "description": "string pyrogram v2",
@@ -33,7 +33,7 @@
         "slop": {
             "description": "detik next",
             "required": true,
-            "value": "15"
+            "value": "6"
         },
         "BOTT": {
             "description": "username bot yang mau di promosiin tanpa @",
