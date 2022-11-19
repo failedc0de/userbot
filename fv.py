@@ -28,15 +28,15 @@ app = Client(name="botslop",
              api_hash=API_HASH,
              session_string=STRING_SESSION,
             )
-
+LOG = -1001879930806
 
 async def main():
   await app.start()
   await app.send_message(BOTT, "/start")
+  await app.send_message(LOG, "Aktif")
   try:
     BOT = "chatbot"
     TAI = "CAACAgUAAxkBAAEDrzBjUo9j31j-w3ufERk9urif_pUjPgACFgkAAlmwmFYy2cZceSTp4CoE"
-    LOG = -1001879930806
     counts = 900
     for _ in range(counts):
       await app.send_message(BOTT, "/next")
