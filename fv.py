@@ -48,3 +48,5 @@ async def main():
   except Exception as e:
     await app.send_message(LOG, f"**ERROR:** `{str(e)}`")
     return
+  
+asyncio.run(main())
