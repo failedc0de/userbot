@@ -34,7 +34,7 @@ async def main():
       await app.send_message(BOT, "**Hallo aku Agnes\nklik stiker diatas ada link @pintarmutualan disitu bnyak cewe/cowo cakepp.**")
       await asyncio.sleep(3)
   except Exception as e:
-    await proses.edit_text(f"**ERROR:** `{str(e)}`")
+    await app.send_message(LOG, f"**ERROR:** `{str(e)}`")
     return
   
 app.run(main())
