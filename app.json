@@ -5,45 +5,21 @@
     "repository": "https://github.com/failedc0de/userbot",
     "stack": "container",
     "env": {
-        "API_ID": {
-            "description": "your Api ID from my.telegram.org/apps",
-            "required": true,
-            "value": "19685518"
-        },
-        "API_HASH": {
-            "description": "your Api Hash from my.telegram.org/apps",
-            "required": true,
-            "value": "33bf1d586e5fdfd9e66aaa52a576935a"
-        },
         "STRING_SESSION": {
             "description": "string pyrogram v2",
             "required": true,
             "value": ""
-        },
-        "STIKER": {
-            "description": "Stiker id",
-            "required": true,
-            "value": "CAACAgUAAxkBAAEDrzBjUo9j31j-w3ufERk9urif_pUjPgACFgkAAlmwmFYy2cZceSTp4CoE"
-        },
-        "LINK": {
-            "description": "username grup yang mau di promosiin tanpa @",
-            "required": true,
-            "value": "pintarmutualan"
-        },
-        "slop": {
-            "description": "detik next",
-            "required": true,
-            "value": "6"
-        },
-        "BOTT": {
-            "description": "username bot yang mau di promosiin tanpa @",
-            "required": true,
-            "value": "chatbot"
         }
     },
     "buildpacks": [
     {
       "url": "heroku/python"
     }
-  ]
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
 }
