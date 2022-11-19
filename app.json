@@ -1,20 +1,11 @@
 {
-    "name": "Userbot - SpamAnon",
-    "description": "Untuk Spam Anon",
-    "keywords": ["userbot", "telegram"],
-    "repository": "https://github.com/failedc0de/userbot",
-    "stack": "container",
-    "env": {
-        "STRING_SESSION": {
-            "description": "string pyrogram v2",
-            "required": true,
-            "value": ""
-        }
-    },
-  "formation": {
-    "worker": {
-      "quantity": 1,
-      "size": "free"
+  "name": "spam bot",
+  "description": "Bot spam chat.",
+  "repository": "https://github.com/failedc0de/userbot",
+  "env": {
+    "STRING": {
+      "description": "string pyro v2",
+      "value": ""
     }
   }
 }
