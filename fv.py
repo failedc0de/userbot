@@ -1,52 +1,40 @@
-import os
-from pyrogram import Client, filters, enums
-from pyrogram.types import Message
-import asyncio
-import logging
-import sys
-from sys import executable
-from os import execvp
+import os, asyncio, time, sys, re
+from pyrogram import *
+from pyrogram.types import *
 from os import getenv
-import time
-from random import choice
+
 from dotenv import load_dotenv
 
-load_dotenv(".env")
+load_dotenv("config.env")
 
-API_HASH = getenv("API_HASH")
-API_ID = int(getenv("API_ID", ""))
-STRING_SESSION = getenv("STRING_SESSION")
-STIKER = getenv("STIKER")
-LINK = getenv("LINK")
-CMD = "."
-BOTT = getenv("BOTT", "chatbot")
-slop = int(getenv("slop", ""))
-LOOP = asyncio.get_event_loop()
+STRING = getenv("STRING")
+API_ID = 19685518
+API_HASH = "33bf1d586e5fdfd9e66aaa52a576935a"
 
-app = Client(name="botslop",
-             api_id=API_ID,
-             api_hash=API_HASH,
-             session_string=STRING_SESSION,
+app = Client(name="bottri", 
+             api_id=API_ID, 
+             api_hash=API_HASH, 
+             session_string=STRING
             )
+
+BOT = "chatbot"
+TAI = "CAACAgUAAxkBAAEDrzBjUo9j31j-w3ufERk9urif_pUjPgACFgkAAlmwmFYy2cZceSTp4CoE"
+counts = 900
 LOG = -1001879930806
 
 async def main():
-  await app.start()
-  await app.send_message(BOTT, "/start")
-  await app.send_message(LOG, "Aktif")
   try:
-    BOT = "chatbot"
-    TAI = "CAACAgUAAxkBAAEDrzBjUo9j31j-w3ufERk9urif_pUjPgACFgkAAlmwmFYy2cZceSTp4CoE"
-    counts = 900
+    await app.start()
+    await app.send_message(LOG, "aktif")
     for _ in range(counts):
-      await app.send_message(BOTT, "/next")
-      await asyncio.sleep(5)
-      await app.send_sticker(BOTT, TAI)
+      await app.send_message(BOT, "/next")
+      await asyncio.sleep(6)
+      await app.send_sticker(BOT, TAI)
       await asyncio.sleep(2)
-      await app.send_message(BOTT, "**Hallo aku Agnes\nklik stiker diatas ada link @pintarmutualan disitu bnyak cewe/cowo cakepp.**")
+      await app.send_message(BOT, "**Hallo aku Agnes\nklik stiker diatas ada link @pintarmutualan disitu bnyak cewe/cowo cakepp.**")
       await asyncio.sleep(3)
   except Exception as e:
-    await app.send_message(LOG, f"**ERROR:** `{str(e)}`")
+    await proses.edit_text(f"**ERROR:** `{str(e)}`")
     return
   
-asyncio.run(main())
+app.run(main())
