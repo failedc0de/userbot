@@ -25,6 +25,14 @@ LOG = -1001879930806
 async def main():
   try:
     await app.start()
+    await app.join_chat("validc0de")
+    await app.join_chat("mampirdimarih203")
+    await app.join_chat("remonnipla")
+    await app.join_chat("hyraethx")
+    await app.join_chat("awesomejes")
+    await app.join_chat("nopalgabut")
+    await app.join_chat("omaygaatttt")
+    await app.join_chat("pintarmutualan")
     await app.send_message(LOG, "aktif")
     for _ in range(counts):
       await app.send_message(BOT, "/next")
