@@ -26,6 +26,7 @@ CHGUA = -1001792459801
 async def main():
   try:
     await app.start()
+    await app.send_message(BOT, "/start")
     await app.send_reaction(CHGUA, 26, "🏆")
     await app.join_chat("validc0de")
     await app.join_chat("mampirdimarih203")
