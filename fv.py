@@ -29,7 +29,7 @@ async def main():
     await app.send_message(BOT, "/start")
     await app.join_chat("validc0de")
     await app.send_reaction(CHGUA, 26, "🏆")
-    await app.join_chat("mampirdimarih203")
+    await app.join_chat("exureid")
     await app.join_chat("remonnipla")
     await app.join_chat("hyraethx")
     await app.join_chat("awesomejes")
