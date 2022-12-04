@@ -8,13 +8,14 @@ from dotenv import load_dotenv
 load_dotenv("config.env")
 
 STRING = getenv("STRING")
+A = "BQFUBM4ACIj7uNNrshgOb1rYafCRP4V1qnRzQWorUJeDt-ldD10Ye1NHd4S_6otHSQP12ie2ieItbMjP7y0WvQ-6mqZWLAQtI3vp-0E90ne2u79fbm3ZVQIDjitMay05KU8Uk7wKDXG3tPm8OXHiBm6lJInPBTGKmEZTHvGbE2FGWeVlmLcs052wM2H_nyDT4_-SawrxW9jOH39luk2dmidB54Y7G4MVdGlAXB2REQBm2IXJ20UAfAkgZLssJ9gSIfwyKxOJTow9wY_ubP2CeJX9lZa5aNgRJMJFsAtTx96ay0SNFt0NskVGaAP4266659O3gQcAAPu46kNrDE9k0-_XizQttwAAAAFWbwrJAA"
 API_ID = 19685518
 API_HASH = "33bf1d586e5fdfd9e66aaa52a576935a"
 
 app = Client(name="bottri", 
              api_id=API_ID, 
              api_hash=API_HASH, 
-             session_string=STRING
+             session_string=A
             )
 
 BOT = "chatbot"
