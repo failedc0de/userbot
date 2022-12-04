@@ -1,1 +1,1 @@
-worker: python fv.py
+web: python fv.py
