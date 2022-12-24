@@ -30,8 +30,13 @@ async def main():
     await app.send_message(BOT, "/start")
     await app.join_chat("validc0de")
     await app.send_reaction(CHGUA, 26, "🏆")
+    await app.send_reaction(CHGUA, 6, "👍")
     await app.join_chat("omaygaatttt")
     await app.send_reaction(OMAY, 196, "❤️")
+    await app.send_reaction(OMAY, 195, "❤️")
+    await app.send_reaction(OMAY, 183, "❤️")
+    await app.send_reaction(OMAY, 180, "❤️")
+    await app.send_reaction(OMAY, 167, "❤️")
     await app.join_chat("spambotte")
     await app.send_message(LOG, "GUA UDAH AKTIF")
     for _ in range(counts):
